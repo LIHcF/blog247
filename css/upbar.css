@@ -1,0 +1,70 @@
+.upbarBox {
+	position: fixed;
+	top: 5%;
+	left: -450px;
+	width: 450px;
+	z-index: 999;
+	transition: 0.7s;
+}
+.upbar_log {
+	position: absolute;
+	height: 35px;
+	width: 35px;
+	top: 0px;
+	right: -40px;
+	background: no-repeat;
+}
+.upbar_avi {
+	height: 40px;
+	background: linear-gradient(to left, rgba(3,3,3,1) , rgba(0,0,0,0));
+	list-style: none;
+}
+.upbar_avi > li {
+	margin-left: 20px;
+	float: left;
+}
+.upbar_avi > li > a {
+	font-size: 15px;
+	line-height: 40px;
+	color: #d8d8d8;
+}
+.upbar_search {
+	outline-style: none;
+	width: 150px;
+	height: 20px;
+	margin: 10px 0;
+	padding: 0 5px;
+	border: none;
+	border-bottom: solid 1px #eee;
+	border-radius: 0px;
+	color: #eee;
+	font-size: 15px;
+	background: transparent;
+}
+.upbar_link {
+	width: 350px;
+	height: 40px;
+	margin: 20px 0;
+	background: linear-gradient(to left, rgba(3,3,3,1) , rgba(0,0,0,0));
+	list-style: none;
+}
+.upbar_link > li {
+	margin-left: 20px;
+	float: left;
+}
+.upbar_link > li > p {
+	font-size: 15px;
+	line-height: 40px;
+	color: #d8d8d8;
+	text-decoration:none;
+}
+.upbar_new {
+	display: block;
+	width: 90px;
+	height: 40px;
+	margin: 20px 0;
+	font-size: 15px;
+	line-height: 40px;
+	margin-left: 20px;
+	background: linear-gradient(to left, rgba(3,3,3,1) , rgba(0,0,0,0));
+}
