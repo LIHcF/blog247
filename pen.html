@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<!--the site is designed by Bob at 2016.9.24-->
+
+	<!--html5格式-->
+	<meta charset="UTF-8" />
+
+	<meta name="description" content="一个业余网站">
+
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="Window-target" content="_top">
+
+	<meta name="author" content="705194673@qq.com">
+	<meta name="keywords" content="">
+
+	<title>只笔</title>
+
+	<link rel="Shortcut Icon" href="sun.ico">
+
+	<link rel="stylesheet" type="text/css" href="css/upbar.css">
+	<link rel="stylesheet" type="text/css" href="css/preview.css">
+	<link rel="stylesheet" type="text/css" href="css/info.css">
+	<link rel="stylesheet" type="text/css" href="css/upto.css">
+
+	<link rel="stylesheet" type="text/css" href="css/pen/pen.css">
+	<link rel="stylesheet" type="text/css" href="css/pen/write.css">
+
+</head>
+<body>
+
+	<!--------------------------------- upbarBox --------------------------------->
+
+	<div class="upbarBox">
+		<img class="upbar_log" src="img/logo.png" onclick="show_bar(this.parentNode)"/>
+		<ul class="upbar_avi upbar_text">
+			<li>
+				<a href="">首页</a>
+			</li>
+			<li>
+				<a href="">分类</a>
+			</li>
+			<li>
+				<a href="">推荐</a>
+			</li>
+			<li>
+				<a href="">排行</a>
+			</li>
+			<li>
+				<a href="">水星记</a>
+			</li>
+			<li>
+				<input class="upbar_search" type="text" name="name" placeholder="回车搜索" autocomplete="off"/>
+			</li>
+		</ul>
+		<ul class="upbar_link">
+			<li>
+				<p>Link ：</p>
+			</li>
+			<li>
+				<p><a href="">GitHub</a></p>
+			</li>
+			<li>
+				<p><a href="">邮箱</a></p>
+			</li>
+			<li>
+				<p>QQ</p>
+			</li>
+			<li>
+				<p>微信</p>
+			</li>
+			<li>
+				<p>电话</p>
+			</li>
+		</ul>
+		<a class="upbar_new" href="pen.html">新建&写作</a>
+	</div>
+
+	<!--------------------------------- previewBox --------------------------------->
+
+	<div class="previewBox" style="height: 45vh">
+		<img class="preview_bkimg" src="img/preview.jpg" />
+		<div class="preview_pre"></div>
+		<section class="priview_section" style="top: 25%">
+			<!-- <h1 class="preview_section_title">12312312</h1> -->
+			<input id="title" class="preview_section_title" placeholder="Or input title" autocomplete="off"/>
+			<!-- <p class="preview_section_info">痛苦在所难免，磨难可以选择。</p> -->
+			<p id="present" class="preview_section_info" contenteditable="plaintext-only" placeholder="Or input title">Or input present</p>
+		</section>
+		<input id="author" class="preview_author" placeholder="author"></input>
+		<p id="time" class="preview_time">time</p>
+	</div>
+
+	<!--------------------------------- label --------------------------------->
+
+	<div class="labelBox">
+		<ul id="label" class="labelCont">
+			<li id="uncategorized" class="label_uncategorized" title="未分类" onclick="selecteCate(this)">╳</li>
+			<li onclick="selecteCate(this)">Text</li>
+			<li onclick="selecteCate(this)">c</li>
+			<li onclick="selecteCate(this)">java</li>
+			<li onclick="selecteCate(this)">你1231212好</li>
+			<li onclick="selecteCate(this)">阿萨</li>
+			<li onclick="selecteCate(this)">认为确认</li>
+			<li class="lable_add" title="新建标签" onclick="addLable()">+</li>
+		</ul>
+	</div>
+
+	<!--------------------------------- add --------------------------------->
+
+	<div class="addBox">
+		<ul id="add" class="addCont">
+			<li id="addSubtitle">Subtitle</li>
+			<li id="addText">Text</li>
+			<li id="addCode">Code</li>
+			<li id="addImg">Img</li>
+			<li id="addLink">Link</li>
+			<li id="delete">Delete</li>
+			<li> -- -- </li>
+			<li id="save">Save</li>
+			<li id="open">Open</li>
+		</ul>
+		<a href=""></a>
+	</div>
+
+	<!--------------------------------- text --------------------------------->
+
+	<div class="textBox">
+		<div id="writeCont" class="writeCont">
+		</div>
+
+	</div>
+
+	<!--------------------------------- uptoBox --------------------------------->
+
+	<div class="uptoBox" onclick="goUp(5)"></div>
+
+	<!--------------------------------- infoBox --------------------------------->
+
+	<div class="infoBox">
+		<p>Copyright © 705194673@qq.com</p>
+	</div>
+
+	<!--------------------------------- javascript --------------------------------->
+
+	<script type="text/javascript" src="js/upbar.js"></script>
+	<script type="text/javascript" src="js/upto.js"></script>
+	<script type="text/javascript" src="js/calledFun.js"></script>
+
+
+	<script type="text/javascript" src="js/pen/write.js"></script>
+	<script type="text/javascript" src="js/pen/pen.js"></script>
+	<script type="text/javascript" src="js/pen/onload.js"></script>
+
+</body>
+</html>
+

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<!--the site is designed by Bob at 2016.9.24-->
+
+	<!--html5格式-->
+	<meta charset="UTF-8" />
+
+	<meta name="description" content="一个业余网站">
+
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="Window-target" content="_top">
+
+	<meta name="author" content="705194673@qq.com">
+	<meta name="keywords" content="">
+
+	<title>blog247</title>
+	
+	<link rel="Shortcut Icon" href="sun.ico">
+
+	<link rel="stylesheet" type="text/css" href="css/upbar.css">
+	<link rel="stylesheet" type="text/css" href="css/preview.css">
+	<link rel="stylesheet" type="text/css" href="css/info.css">
+	<link rel="stylesheet" type="text/css" href="css/upto.css">
+
+	<link rel="stylesheet" type="text/css" href="css/home.css">
+
+</head>
+<body>
+
+	<!--------------------------------- upbarBox --------------------------------->
+
+	<div class="upbarBox">
+		<img class="upbar_log" src="img/logo.png" onclick="show_bar(this.parentNode)"/>
+		<ul class="upbar_avi upbar_text">
+			<li>
+				<a href="">首页</a>
+			</li>
+			<li>
+				<a href="">分类</a>
+			</li>
+			<li>
+				<a href="">推荐</a>
+			</li>
+			<li>
+				<a href="">排行</a>
+			</li>
+			<li>
+				<a href="">水星记</a>
+			</li>
+			<li>
+				<input class="upbar_search" type="text" name="name" placeholder="回车搜索" autocomplete="off"/>
+			</li>
+		</ul>
+		<ul class="upbar_link">
+			<li>
+				<p>Link ：</p>
+			</li>
+			<li>
+				<p><a href="https://github.com/LIHcF">GitHub</a></p>
+			</li>
+			<li>
+				<p>QQ</p>
+			</li>
+			<li>
+				<p>微信</p>
+			</li>
+			<li>
+				<p title="705194673@qq.com">邮箱</p>
+			</li>
+			<li>
+				<p title="15181919174">电话</p>
+			</li>
+		</ul>
+		<a class="upbar_new" href="pen.html">新建&写作</a>
+	</div>
+
+	<!--------------------------------- previewBox --------------------------------->
+
+	<div class="previewBox">
+		<input id="imgFile" type="file" accept=".jpg,.png" onchange="exchangeImg(this)" style="display: none" />
+		<div class="preview_changeImg" title="更换图片" onclick="document.getElementById('imgFile').click()"></div>
+		<img  id="preview_img" class="preview_bkimg" src="img/preview.jpg" />
+		<div class="preview_pre"></div>
+		<section class="priview_section">
+			<h1 class="preview_section_title">L!HcF</h1>
+			<p class="preview_section_info">痛苦在所难免，磨难可以选择。</p>
+		</section>
+		<div class="preview_go" onclick="scrollToMain(this.parentNode.offsetHeight)"></div>
+	</div>
+
+	<!--------------------------------- mainBox --------------------------------->
+
+	<div class="mainBox" id='main'>
+		<p class="main_time" onclick="showCont(this, this.nextElementSibling)">置顶</p>
+		<!-- nextElementSibling;nextSibling; -->
+		<ul class="main_cont">
+			<li>
+				<a class="main_cont_title">asdfewrkajlrth nviouawyer  ifgb gar fclaugj,f sd</a>
+				<label class="main_cont_lable">
+					<a href="">123</a>
+					<a href="">123</a>
+					<a href="">123</a>
+				</label>
+				<p class="main_cont_preview">priv附近啊和各位u提前发给i夫i啊还是平台你棒棒糖太贵啊虽然ygpiaeyriiew</p>
+			</li>
+			<li>
+				<a class="main_cont_title">asdfewrkajlrth nviouawyer  ifgb gar fclaugj,f sd</a>
+				<label class="main_cont_lable">
+					<a href="">123</a>
+					<a href="">123</a>
+					<a href="">123</a>
+				</label>
+				<p class="main_cont_preview">priv附近啊和各位u提前发给i夫i啊还是平台你棒棒糖太贵啊虽然ygpiaeyriiew</p>
+			</li>
+		</ul>
+		<p class="main_time" onclick="showCont(this, this.nextElementSibling)">2016.9.24</p>
+		<ul class="main_cont">
+			<li>
+				<a class="main_cont_title">asdfewrkajlrth nviouawyer  ifgb gar fclaugj,f sd</a>
+				<label class="main_cont_lable">
+					<a href="">123</a>
+					<a href="">123</a>
+					<a href="">123</a>
+					<a href="">123</a>
+				</label>
+				<p class="main_cont_preview">priv附近啊和各位u提前发给i夫i啊还是平台你棒棒糖太贵啊虽然ygpiaeyriiew</p>
+			</li>
+		</ul>
+	</div>
+
+	<!--------------------------------- uptoBox --------------------------------->
+
+	<div class="uptoBox" onclick="goUp()"></div>
+
+	<!--------------------------------- infoBox --------------------------------->
+
+	<div class="infoBox">
+		<p>Copyright © 705194673@qq.com</p>
+	</div>
+
+	<!--------------------------------- script --------------------------------->
+
+	<script type="text/javascript" src="js/upbar.js"></script>
+	<script type="text/javascript" src="js/upto.js"></script>
+	<script type="text/javascript" src="js/preview.js"></script>
+	<script type="text/javascript" src="js/calledFun.js"></script>
+
+	<script type="text/javascript" src="js/home.js"></script>
+
+</body>
+</html>
