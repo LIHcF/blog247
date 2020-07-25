@@ -197,7 +197,7 @@ var Write = function(node) {
 			var li = document.createElement('li');
 			var img = document.createElement('img');
 			var input = document.createElement('input');
-			img.src = "img/10.jpg";
+			img.src = "http://m.qpic.cn/psc?/V53WVyx92FKV2S3XXSTw3NV1nL4euh3X/TmEUgtj9EK6.7V8ajmQrEC2OL9PxqmgG2HYGO0DIgP0mVlDt74x0Tqu9OAi4ylBSTlHmOCBQnr4Cr0ALlC2H7ENMOtLSpmp.kF9NojzOow0!/b&bo=IgGTAAAAAAABF4A!&rf=viewer_4";
 			img.setAttribute('class', 'write_img');
 			input.setAttribute('placeholder', 'Input img src!');
 			input.setAttribute('class', 'write_img_src');
